@@ -1,0 +1,77 @@
+generated: '2026-08-05'
+method: probed
+source: live GET probes of https://www.quantatx.com/.well-known/*
+host: https://www.quantatx.com
+summary: >-
+  No /.well-known/ discovery documents are published. Every probed path returns HTTP 404 from the
+  Apache origin (an HTML 404 template, not JSON), so there is no security.txt, no OIDC or OAuth
+  discovery, no API catalog, no AI plugin manifest and no A2A agent card on this host. The apex
+  quantatx.com serves the same site, and api.quantatx.com / developer.quantatx.com /
+  docs.quantatx.com do not resolve in DNS, so there is no second host to probe. Absence is recorded
+  as evidence — it is a valid probe result, not a gap in the harvest. No WellKnown, SecurityTxt or
+  AgentCard pointer is wired in apis.yml because none of these documents exist.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+x-contract-discovery:
+  note: >-
+    STEP 0b contract discovery run in full against every host associated with this company before
+    recording "no machine-readable contract".
+  probes:
+  - url: https://www.quantatx.com/openapi.json
+    status: 404
+  - url: https://www.quantatx.com/swagger.json
+    status: 404
+  - url: https://www.quantatx.com/api-docs
+    status: 404
+  - url: https://www.quantatx.com/docs
+    status: 404
+  - url: https://www.quantatx.com/graphql
+    status: 404
+  - url: https://www.quantatx.com/llms.txt
+    status: 404
+  - url: https://www.quantatx.com/robots.txt
+    status: 404
+  - url: https://www.quantatx.com/sitemap.xml
+    status: 404
+  - url: https://www.quantatx.com/wp-json/
+    status: 404
+  - url: https://quantatx.com/
+    status: 200
+  - url: https://api.quantatx.com/
+    status: 0
+    note: DNS does not resolve
+  - url: https://developer.quantatx.com/
+    status: 0
+    note: DNS does not resolve
+  - url: https://docs.quantatx.com/
+    status: 0
+    note: DNS does not resolve
+  control:
+    url: https://www.quantatx.com/zzz-control-path/
+    status: 404
+    note: >-
+      Control path confirms the origin returns real 404s rather than a soft-200 catch-all, so the
+      404s above are genuine absences.
+x-evidence:
+  fetched: '2026-08-05'
+  host: www.quantatx.com
+  server: Apache
+  note: >-
+    The corporate site is a single static HTML document. /about/, /leadership/, /platform/,
+    /pipeline/, /news/, /careers/ and /contact/ every one return the identical 33,984-byte body as
+    /, confirmed by md5 — they are anchor sections of one page, not distinct documents. Only
+    /pipeline/investigational-agents/ and the dated /news/<date>/ press releases are separate
+    documents. No CMS or content API is present (no wp-json, no wp-content, no generator meta).

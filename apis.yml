@@ -1,7 +1,25 @@
 aid: quanta-therapeutics
 name: Quanta Therapeutics
-description: 'Quanta Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+image: https://www.quantatx.com/themes/default/images/logo.svg
+description: >-
+  Quanta Therapeutics is a privately held, clinical-stage biopharmaceutical company founded in 2018
+  and headquartered at 2 Tower Place in South San Francisco, California, with a second site in
+  Radnor, Pennsylvania. It develops oral allosteric small-molecule medicines for RAS-driven cancers
+  by targeting the protein-protein interactions that drive oncogenic RAS signaling, an approach the
+  company describes as conformational blockade of RAS. Its discovery engine is a proprietary
+  high-throughput Second Harmonic Generation (SHG) optical platform that detects subtle protein
+  conformational changes and so surfaces allosteric modulators of signaling complexes that
+  conventional binding assays miss. The clinical pipeline is a set of direct multi-KRAS inhibitors:
+  QTX3034, a G12D-preferring oral multi-KRAS inhibitor in Phase 1 as monotherapy and in combination
+  with cetuximab in KRAS G12D-mutant solid tumors; QTX3544, a G12V-preferring multi-KRAS inhibitor
+  cleared for IND in January 2025; and QTX3046, which dosed its first patient in a Phase 1/1b trial
+  in June 2024. Indications span pancreatic, colorectal, lung and endometrial cancers. The company
+  announced a $60 million Series C in October 2021 and a Series D of over $50 million in May 2023
+  led by Avidity Partners alongside Sofinnova Investments, Vida Ventures, Surveyor Capital,
+  Longitude Capital and AbbVie Ventures. Quanta Therapeutics runs no developer program and publishes
+  no public API. Its corporate site is a single static HTML document served from Apache with
+  anchor-based sections; probes for OpenAPI, GraphQL, MCP, llms.txt and every /.well-known/
+  discovery path returned HTTP 404, and no api./developer./docs. subdomain resolves.
 url: https://raw.githubusercontent.com/api-evangelist/quanta-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +30,14 @@ created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Life Sciences
+- Oncology
+- Drug Discovery
+- Precision Medicine
+- Clinical Trials
+- Healthcare
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +46,56 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://www.quantatx.com/
+- type: About
+  url: https://www.quantatx.com/#about
+- type: Team
+  url: https://www.quantatx.com/#leadership
+- type: Science
+  url: https://www.quantatx.com/#platform
+- type: Products
+  url: https://www.quantatx.com/#pipeline
+- type: Research
+  url: https://www.quantatx.com/pipeline/investigational-agents/
+- type: News
+  url: https://www.quantatx.com/#news
+- type: Careers
+  url: https://www.quantatx.com/#careers
+- type: Contact
+  url: https://www.quantatx.com/#contact
+- type: LinkedIn
+  url: https://www.linkedin.com/company/quanta-therapeutics
+- type: SecondaryMarket
   url: https://forgeglobal.com/quanta-therapeutics_stock/
+- type: DomainSecurity
+  url: security/quanta-therapeutics-domain-security.yml
+- type: LLMsTxt
+  url: llms/quanta-therapeutics-llms.txt
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Quanta Therapeutics is a clinical-stage oncology drug developer whose product is a small
+    molecule, not software; its entire corporate presence is one static HTML page served from
+    Apache, where /about/, /platform/, /pipeline/, /news/, /careers/ and /contact/ all return the
+    identical 33,984-byte document, and no api./developer./docs.quantatx.com subdomain resolves in
+    DNS.
+  evidence:
+  - url: https://www.quantatx.com/openapi.json
+    status: 404
+  - url: https://www.quantatx.com/llms.txt
+    status: 404
+  - url: https://www.quantatx.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.quantatx.com/graphql
+    status: 404
+  - url: https://www.quantatx.com/wp-json/
+    status: 404
+  - url: https://api.quantatx.com/
+    status: 0
+  checked: '2026-08-05'
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
