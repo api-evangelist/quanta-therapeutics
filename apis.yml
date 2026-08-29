@@ -1,5 +1,16 @@
 aid: quanta-therapeutics
 name: Quanta Therapeutics
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://www.quantatx.com/themes/default/images/logo.svg
 description: >-
   Quanta Therapeutics is a privately held, clinical-stage biopharmaceutical company founded in 2018
