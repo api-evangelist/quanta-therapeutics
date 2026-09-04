@@ -11,6 +11,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://www.quantatx.com/themes/default/images/logo.svg
 description: >-
   Quanta Therapeutics is a privately held, clinical-stage biopharmaceutical company founded in 2018
