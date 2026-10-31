@@ -64,5 +64,79 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Quanta Therapeutics is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/quanta-therapeutics_stock/
+Quanta Therapeutics is a privately held, clinical-stage biopharmaceutical company founded in 2018 and headquartered at 2 Tower Place in South San Francisco, California, with a second site in Radnor, Pennsylvania. It develops oral allosteric small-molecule medicines for RAS-driven cancers by targeting the protein-protein interactions that drive oncogenic RAS signaling, an approach the company describes as conformational blockade of RAS. Its discovery engine is a proprietary high-throughput Second Harmonic Generation (SHG) optical platform that detects subtle protein conformational changes and so surfaces allosteric modulators of signaling complexes that conventional binding assays miss. The clinical pipeline is a set of direct multi-KRAS inhibitors: QTX3034, a G12D-preferring oral multi-KRAS inhibitor in Phase 1 as monotherapy and in combination with cetuximab in KRAS G12D-mutant solid tumors; QTX3544, a G12V-preferring multi-KRAS inhibitor cleared for IND in January 2025; and QTX3046, which dosed its first patient in a Phase 1/1b trial in June 2024. Indications span pancreatic, colorectal, lung and endometrial cancers. The company announced a $60 million Series C in October 2021 and a Series D of over $50 million in May 2023 led by Avidity Partners alongside Sofinnova Investments, Vida Ventures, Surveyor Capital, Longitude Capital and AbbVie Ventures. Quanta Therapeutics runs no developer program and publishes no public API. Its corporate site is a single static HTML document served from Apache with anchor-based sections; probes for OpenAPI, GraphQL, MCP, llms.txt and every /.well-known/ discovery path returned HTTP 404, and no api./developer./docs. subdomain resolves.
+
+**Areas:** Company · Biotechnology · Pharmaceuticals · Life Sciences · Oncology · Drug Discovery · Precision Medicine · Clinical Trials · Healthcare
+
+## Quanta Therapeutics on APIs.io
+
+Everything profiled for Quanta Therapeutics is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/quanta-therapeutics/](https://apis.io/providers/quanta-therapeutics/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Quanta Therapeutics Domain Security](https://apis.io/security/quanta-therapeutics/quanta-therapeutics-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.quantatx.com/)
+
+## API Evangelist rating
+
+**Kin Score 3.8** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 49.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/quanta-therapeutics/](https://apis.io/providers/quanta-therapeutics/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Quanta Therapeutics: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/quanta-therapeutics/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
